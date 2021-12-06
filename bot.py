@@ -35,7 +35,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Alş Tagger Bot'un Komutları**\n\nKomut: /all \n  Bu komutu, Tag İşlemini Başlatmak için Kullan Komutu Yazdıktan Sonra Yazmak İstediğin Cümleyi Veya Kelimeyi Girebilirsin. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaja yanıt verirseniz Bot yanıtlanan mesaja kullanıcıları etiketleyecek"
+  helptext = "**Ali Tagger Bot'un Komutları**\n\nKomut: /all \n  Bu komutu, Tag İşlemini Başlatmak için Kullan Komutu Yazdıktan Sonra Yazmak İstediğin Cümleyi Veya Kelimeyi Girebilirsin. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaja yanıt verirseniz Bot yanıtlanan mesaja kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/alitaggerBot?startgroup=a'),
