@@ -27,20 +27,20 @@ async def cancel(event):
 async def start(event):
   await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/loungesupport'),
-                      Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/alitaggerBot?startgroup=a'),
+                      Button.url('📣 Destek', 'https://t.me/mmagneto3'),
+                      Button.url('🚀 Sahibim', 'https://t.me/mmagneto')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Loungetagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
+  helptext = "**Alş Tagger Bot'un Komutları**\n\nKomut: /all \n  Bu komutu, Tga İşlemini Başlatmak için Kullan Komutu Yazdıktan Sonra Yazmak İstediğin Cümleyi Veya Kelimeyi Girebilirsin. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaja yanıt verirseniz Bot yanıtlanan mesaja kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/loungesupport'),
-                      Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/alitaggerBot?startgroup=a'),
+                       Button.url('📣 Destek', 'https://t.me/mmagneto3'),
+                      Button.url('🚀 Sahibim', 'https://t.me/mmagneto')]
                     ),
                     link_preview=False
                    )
@@ -56,7 +56,7 @@ async def mentionall(event):
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("__Yalnızca yöneticiler hepsinden bahsedebilir!__")
+    return await event.respond("__Yalnızca yöneticiler herkesten bahsedebilir!__")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -106,5 +106,5 @@ async def mentionall(event):
         usrtxt = ""
 
 
-print(">> Bot çalıyor merak etme 🚀 @loungesupport bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @mmagneto3 bilgi alabilirsin <<")
 client.run_until_disconnected()
