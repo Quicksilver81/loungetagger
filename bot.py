@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**Ali Tagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/alitaggerBot?startgroup=a'),
                       Button.url('📣 Destek', 'https://t.me/mmagneto3'),
@@ -35,7 +35,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Alş Tagger Bot'un Komutları**\n\nKomut: /all \n  Bu komutu, Tga İşlemini Başlatmak için Kullan Komutu Yazdıktan Sonra Yazmak İstediğin Cümleyi Veya Kelimeyi Girebilirsin. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaja yanıt verirseniz Bot yanıtlanan mesaja kullanıcıları etiketleyecek"
+  helptext = "**Alş Tagger Bot'un Komutları**\n\nKomut: /all \n  Bu komutu, Tag İşlemini Başlatmak için Kullan Komutu Yazdıktan Sonra Yazmak İstediğin Cümleyi Veya Kelimeyi Girebilirsin. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaja yanıt verirseniz Bot yanıtlanan mesaja kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/alitaggerBot?startgroup=a'),
