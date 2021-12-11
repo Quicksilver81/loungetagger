@@ -13,7 +13,9 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
-client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
+owner_id = os.environ.get("OWNER_İD")
+database_url = os.environ.get("DATABASE_URL)
+client = TelegramClient('client', api_id, api_hash, owner_id, database_url).start(bot_token=bot_token)
 
 anlik_calisan = []
 
