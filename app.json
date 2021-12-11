@@ -7,6 +7,14 @@
       "description": "bot token girin.",
       "value": ""
     },
+    "OWNER_İD": {
+      "description": "TG İDİNİ GİR.",
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "BUL Bİ YERDEN.",
+      "value": ""
+    },
     "APP_ID": {
       "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
