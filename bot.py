@@ -1,10 +1,6 @@
 import os, logging, asyncio
 from telethon import Button
 from telethon import TelegramClient, events
-from telethon.sessions import StringSession
-from telethon.tl.types import ChannelParticipantsAdmins
-from loungetagger.broadcast_helper import send_msg
-from loungetagger.database import Database
 
 logging.basicConfig(
     level=logging.INFO,
